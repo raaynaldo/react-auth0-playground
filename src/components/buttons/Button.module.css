@@ -1,0 +1,168 @@
+.button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
+
+.primary {
+  color: var(--white);
+  background-color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
+}
+
+.primary:hover {
+  background-color: #29527e;
+}
+
+.primary:active {
+  background-color: var(--dark-blue);
+}
+
+.primary:disabled {
+  background-color: var(--light-gray);
+  border-color: var(--light-gray);
+}
+
+.tertiary {
+  color: var(--black);
+  background-color: var(--lightest-gray);
+  border: 1px solid var(--medium-gray);
+}
+
+.tertiary:hover {
+  background-color: var(--light-gray);
+}
+
+.tertiary:active {
+  background-color: var(--lightest-gray);
+}
+
+.tertiary:disabled {
+  background-color: var(--lightest-gray);
+  border-color: var(--light-gray);
+  color: var(--medium-gray);
+}
+
+.secondary {
+  color: var(--dark-blue);
+  background-color: var(--white);
+  border: 1px solid var(--dark-blue);
+}
+
+.secondary:hover {
+  background-color: var(--light-blue);
+}
+
+.secondary:active {
+  background-color: var(--white);
+}
+
+.secondary:disabled {
+  background-color: var(--light-blue);
+}
+
+.ghost {
+  color: var(--dark-blue);
+  background-color: transparent;
+  border: 0;
+}
+
+.ghost:hover {
+  background-color: var(--light-blue);
+}
+
+.ghost:active {
+  background-color: var(--white);
+}
+
+.ghost:disabled {
+  background-color: var(--light-blue);
+}
+
+.dark {
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.dark:hover {
+  background-color: #333333;
+}
+
+.dark:active {
+  background-color: var(--black);
+}
+
+.dark:disabled {
+  background-color: #333333;
+}
+
+.light {
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--black);
+}
+
+.light:hover {
+  background-color: var(--lightest-gray);
+}
+
+.light:active {
+  background-color: var(--white);
+}
+
+.light:disabled {
+  background-color: var(--lightest-gray);
+}
+
+.loading {
+  position: relative;
+  transition: none;
+}
+
+.loading:disabled {
+  color: transparent;
+  cursor: wait;
+}
+
+.spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.animateSpin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.textBlue {
+  color: var(--dark-blue);
+}
+
+.textWhite {
+  color: var(--white);
+}
+
+.textGray {
+  color: var(--medium-gray);
+}
+
+.textBlack {
+  color: var(--black);
+}
